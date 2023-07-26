@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "2c9a1394-2198-4831-8fd3-1edba2f5ee34",
+		"name": "/user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5320433"
+	},
+	"item": [
+		{
+			"name": "/assign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"84719-snj28-817as-j12a8\",\r\n    \"roleId\":\"2\",\r\n    \"teamId\":\"0\"   \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/assign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"assign"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "84719-snj28-817as-j12a8",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/membershipRole",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
